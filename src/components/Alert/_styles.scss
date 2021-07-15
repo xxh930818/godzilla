@@ -1,0 +1,86 @@
+.vikingship-alert {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  //   align-items: center;
+  width: 600px;
+  padding: 8px 15px;
+  background: #b7eb8f;
+  border: 1px solid #b7eb8f;
+  border-radius: 2px;
+  word-break: break-word;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.85);
+  .vikingship-icon {
+    margin-right: 15px;
+    width: 24px;
+    height: 24px;
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .vikingship-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    line-height: 22px;
+    .vikingship-message {
+      line-height: 22px;
+      margin-bottom: 0px;
+      color: rgba(0, 0, 0, 0.85);
+    }
+  }
+  .vikingship-close-icon {
+    // position: absolute;
+    margin-left: 8px;
+    padding: 0;
+    overflow: hidden;
+    font-size: 12px;
+    height: 12px;
+    line-height: 12px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .vikingship-icon-success {
+    color: #52c41a;
+  }
+  .vikingship-icon-info {
+    color: #1890ff;
+  }
+  .vikingship-icon-success {
+    color: #faad14;
+  }
+  .vikingship-icon-success {
+    color: #ff4d4f;
+  }
+}
+.vikingship-alert-with-description {
+  .vikingship-content {
+    .vikingship-message {
+      margin-bottom: 4px;
+      font-size: 16px;
+    }
+    .vikingship-description {
+      font-size: 12px;
+    }
+  }
+}
+.vikingship-alert-success {
+  background: #cbfba7;
+  border: 1px solid #cbfba7;
+}
+.vikingship-alert-info {
+  background: #b6e3ff;
+  border: 1px solid #b6e3ff;
+}
+.vikingship-alert-warning {
+  background: #ffdc6a;
+  border: 1px solid #ffdc6a;
+}
+.vikingship-alert-error {
+  background: #ffccc7;
+  border: 1px solid #ffccc7;
+}
